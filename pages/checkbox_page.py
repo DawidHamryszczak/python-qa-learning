@@ -12,7 +12,7 @@ class CheckboxPage:
         self.driver.get(self.url)
 
     def click_first_checkbox(self):
-        first_checkbox = self.driver.find_element(*self.check_box).click()
+        self.driver.find_element(*self.check_box).click()
 
     def is_fist_checkbox_selected(self):
         first_checkbox = self.driver.find_element(*self.check_box)
